@@ -15,6 +15,21 @@ To reproduce the results in the report, please copy the repo into your Google Dr
 It is worth noticing that the process is highly time-consuming and require advanced hardware.
 
 
+## scripts usages:
+
+[generate_prefixes.py](https://github.com/YLtrees2/Prefix_Debiasing/blob/main/generate_prefixes.py) is used to generate the prefix prompts given the bias-inducing prompts. usage:
+
+```
+python generate_prefixes.py --PL  [max prefix length]
+	--K [number of top prefixes saved for each length]
+	--debias_type  gender or race
+	--model_type  bert or roberta or albert
+	--model_name_or_path  bert-base-uncased, etc
+	--prompts_file [input bias-inducing prompts, e.g. prompts_bert-base-uncased_gender]
+```
+
+
+
 [prefix_metric.py](https://github.com/YLtrees2/Prefix_Debiasing/blob/main/crows-pairs/prefix_metric.py) is used to evaluate prefix-debias given the learned prefixes. usage:
 
 ```
