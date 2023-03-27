@@ -15,7 +15,7 @@ To reproduce the results in the report, please copy the repo into your Google Dr
 It is worth noticing that the process is highly time-consuming and require advanced hardware.
 
 
-## scripts usages:
+## Scripts usages:
 
 [generate_prefixes.py](https://github.com/YLtrees2/Prefix_Debiasing/blob/main/generate_prefixes.py) is used to generate the prefix prompts given the bias-inducing prompts. usage:
 
